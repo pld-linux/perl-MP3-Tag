@@ -26,7 +26,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is a Perl module to read/write ID3v1, ID3v1.1 and ID3v2.3
-tags of mp3-files. (Other tags hopefully to follow).
+tags of MP3 files. (Other tags hopefully to follow).
 
 %description -l pl
 Modu³ Perla s³u¿±cy do odczytywania/zapisywania znaczników MP3 typu
