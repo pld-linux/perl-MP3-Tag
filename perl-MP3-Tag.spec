@@ -5,8 +5,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MP3
-%define	pnam	Tag
+%define		pdir	MP3
+%define		pnam	Tag
 #
 Summary:	Module for reading/writing tags of MP3 audio files
 Summary(pl):	Modu³ do odczytywania/zapisywania znaczników z plików MP3
