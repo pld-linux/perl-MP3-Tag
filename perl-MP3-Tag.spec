@@ -9,7 +9,7 @@
 %define	pnam	Tag
 #
 Summary:	Module for reading/writing tags of MP3 audio files
-Summary(pl):	Modu³ do odczytywaniu/zapisywania tagów z plików MP3
+Summary(pl):	Modu³ do odczytywaniu/zapisywania znaczników z plików MP3
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.92
 Release:	1
@@ -24,12 +24,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a perl module to read/write ID3v1, ID3v1.1 and ID3v2.3
+This is a Perl module to read/write ID3v1, ID3v1.1 and ID3v2.3
 tags of mp3-files. (Other tags hopefully to follow).
 
 %description -l pl
-Modu³ perla s³u¿acy do odczytywania/zapisywania tagów MP3 w systemie
-ID3v1, ID3v1.1 oraz ID3v2.3. (kolejne systemu w przysz³o¶ci).
+Modu³ Perla s³u¿±cy do odczytywania/zapisywania znaczników MP3 typu
+ID3v1, ID3v1.1 oraz ID3v2.3 (inne znaczniki w przysz³o¶ci).
 
 %description -l ru
 
@@ -56,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README.txt examples/ 
-%{perl_vendorlib}/%{pdir}/%{pnam}.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}/
+%{perl_vendorlib}/MP3/Tag.pm
+%{perl_vendorlib}/MP3/Tag
 %{_mandir}/man3/*
