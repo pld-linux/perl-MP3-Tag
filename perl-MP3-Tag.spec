@@ -12,12 +12,12 @@ Summary:	Module for reading/writing tags of MP3 audio files
 Summary(pl):	Modu³ do odczytywaniu/zapisywania tagów z plików MP3
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.92
-Release:	0.1
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e3b506afc143cd4cd325666c7f7c4b6e
-#URL:		
+URL:		http://www.cpan.org/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
