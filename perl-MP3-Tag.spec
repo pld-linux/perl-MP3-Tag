@@ -9,7 +9,7 @@
 %define		pnam	Tag
 #
 Summary:	Module for reading/writing tags of MP3 audio files
-Summary(pl):	Modu≥ do odczytywania/zapisywania znacznikÛw z plikÛw MP3
+Summary(pl.UTF-8):   Modu≈Ç do odczytywania/zapisywania znacznik√≥w z plik√≥w MP3
 Name:		perl-MP3-Tag
 Version:	0.94
 Release:	1
@@ -28,11 +28,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a Perl module to read/write ID3v1, ID3v1.1 and ID3v2.3
 tags of MP3 files. (Other tags hopefully to follow).
 
-%description -l pl
-Modu≥ Perla s≥uø±cy do odczytywania/zapisywania znacznikÛw MP3 typu
-ID3v1, ID3v1.1 oraz ID3v2.3 (inne znaczniki w przysz≥o∂ci).
+%description -l pl.UTF-8
+Modu≈Ç Perla s≈Çu≈ºƒÖcy do odczytywania/zapisywania znacznik√≥w MP3 typu
+ID3v1, ID3v1.1 oraz ID3v2.3 (inne znaczniki w przysz≈Ço≈õci).
 
-%description -l ru
+%description -l ru.UTF-8
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
