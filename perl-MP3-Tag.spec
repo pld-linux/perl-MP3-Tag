@@ -9,7 +9,7 @@
 %define		pnam	Tag
 #
 Summary:	Module for reading/writing tags of MP3 audio files
-Summary(pl.UTF-8):   Moduł do odczytywania/zapisywania znaczników z plików MP3
+Summary(pl.UTF-8):	Moduł do odczytywania/zapisywania znaczników z plików MP3
 Name:		perl-MP3-Tag
 Version:	0.94
 Release:	1
