@@ -11,22 +11,22 @@
 Summary:	Module for reading/writing tags of MP3 audio files
 Summary(pl.UTF-8):	Moduł do odczytywania/zapisywania znaczników z plików MP3
 Name:		perl-MP3-Tag
-Version:	0.9710
-Release:	2
+Version:	1.11
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	743193ea3c608f0b5954dedbf1a7f94a
+# Source0-md5:	728903a17476199746af3600f562e7d2
 URL:		http://search.cpan.org/dist/MP3-Tag/
-BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.21-3
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is a Perl module to read/write ID3v1, ID3v1.1 and ID3v2.3
-tags of MP3 files. (Other tags hopefully to follow).
+This is a Perl module to read/write ID3v1, ID3v1.1 and ID3v2.3 tags of
+MP3 files. (Other tags hopefully to follow).
 
 %description -l pl.UTF-8
 Moduł Perla służący do odczytywania/zapisywania znaczników MP3 typu
@@ -60,6 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/audio_rename
 %attr(755,root,root) %{_bindir}/mp3info2
 %attr(755,root,root) %{_bindir}/typeset_audio_dir
+%{perl_vendorlib}/Encode/transliterate_win1251.pm
+%{perl_vendorlib}/Normalize/Text/Music_Fields.pm
 %{perl_vendorlib}/MP3/*.pm
 %{perl_vendorlib}/MP3/Tag
 %{_mandir}/man1/*
