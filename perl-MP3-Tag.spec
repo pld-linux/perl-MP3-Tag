@@ -12,7 +12,7 @@ Summary:	Module for reading/writing tags of MP3 audio files
 Summary(pl.UTF-8):	Moduł do odczytywania/zapisywania znaczników z plików MP3
 Name:		perl-MP3-Tag
 Version:	1.11
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -60,7 +60,10 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/audio_rename
 %attr(755,root,root) %{_bindir}/mp3info2
 %attr(755,root,root) %{_bindir}/typeset_audio_dir
+%dir %{perl_vendorlib}/Encode
 %{perl_vendorlib}/Encode/transliterate_win1251.pm
+%dir %{perl_vendorlib}/Normalize
+%dir %{perl_vendorlib}/Normalize/Text
 %{perl_vendorlib}/Normalize/Text/Music_Fields.pm
 %{perl_vendorlib}/MP3/*.pm
 %{perl_vendorlib}/MP3/Tag
