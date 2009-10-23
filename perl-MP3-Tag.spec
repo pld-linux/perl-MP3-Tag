@@ -12,7 +12,7 @@ Summary:	Module for reading/writing tags of MP3 audio files
 Summary(pl.UTF-8):	Moduł do odczytywania/zapisywania znaczników z plików MP3
 Name:		perl-MP3-Tag
 Version:	1.11
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -32,8 +32,6 @@ MP3 files. (Other tags hopefully to follow).
 Moduł Perla służący do odczytywania/zapisywania znaczników MP3 typu
 ID3v1, ID3v1.1 oraz ID3v2.3 (inne znaczniki w przyszłości).
 
-%description -l ru.UTF-8
-
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
@@ -51,12 +49,15 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README.txt examples/
+%doc Changes README.txt
 %attr(755,root,root) %{_bindir}/audio_rename
 %attr(755,root,root) %{_bindir}/mp3info2
 %attr(755,root,root) %{_bindir}/typeset_audio_dir
@@ -69,3 +70,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/MP3/Tag
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+%{_examplesdir}/%{name}-%{version}
